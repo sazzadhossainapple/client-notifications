@@ -7,7 +7,6 @@ function App() {
   const [notifications, setNotifications] = useState([]);
   // Connect to Socket.IO server
   useEffect(() => {
-    `${import.meta.env.VITE_API_KEY_URL}/api/review`;
     const socket = io(`${import.meta.env.VITE_API_KEY_URL}`);
 
     // Listen for real-time notifications
